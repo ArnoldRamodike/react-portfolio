@@ -1,0 +1,45 @@
+nav{
+    width: 100vw;
+    height: 5rem;
+    display: grid;
+    place-items: centre;
+    background:  var(--color-primary);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    box-shadow: 0 1rem 1.rem hsla(var(--primary-hue), 68%, 43%, 20%);
+    transition:  var(--transistion);
+}
+
+.nav__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__logo{
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.nav__menu{
+    display: flex;
+    gap: 3.5rem;
+}
+
+#theme__icon{
+    background:  transparent;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* TABLETS AND PHONES MEDIA QUERY */
+@media screen and (max-width: 1024) {
+    .nav__menu{
+        display: none;
+    }
+}
